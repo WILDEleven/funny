@@ -1,0 +1,141 @@
+@import url("m_style.css");
+.full(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+body,html,.wrap{
+    .full(100%,100%,none);
+}
+.wrap{
+    .box(vertical);
+    header{
+        .full(100%,5rem,none);
+        .box(horizontal); 
+        border-bottom:1px solid #ccc ;      
+        .left{
+            line-height: 3.5rem;
+              -webkit-flex: 1;
+            .input_search{
+                .full(18rem,auto,#eeeeee);
+                border-radius: 0.4rem;
+                line-height: 3.5rem;
+                .box(horizontal);
+                margin: 1rem;
+                span{
+                    margin: 0 0.6rem;
+                    
+                    img{
+                        .full(1.2rem,auto,none);
+                    }
+                }
+                input{
+                    display: block;                  
+                    background: #eee;
+                    border: none;
+                    outline: none;
+                    line-height: 3.5rem;
+                }
+            }
+        }
+        .right{
+            .full(3rem,auto,none); 
+            line-height: 5rem;
+            position: absolute;
+            right: 1rem;
+            a{                          
+                color: red;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    section{
+                .content{
+                .box(horizontal);
+                border-bottom: 1px solid #ccc;
+                dl{
+                    .box(horizontal);
+                    margin: 1rem;
+                    -webkit-box-flex: 1;                  
+                    dt{
+                        img{
+                            .full(4rem,auto,none);
+                        }
+                    }
+                    dd{
+                        margin-left:0.8rem;
+                        h5{
+                            font-size: 1.5rem;
+                        }
+                        h6{
+                            color: #c9c9c9;
+                            font-size: 1.2rem;
+                            font-weight: normal;
+                        }
+                    }                   
+                }
+                i{
+                        border: 1px solid #ccc;
+                        border-radius: 0.4rem;
+                        padding:0.4rem 0.8rem;
+                        line-height: 5.5rem;
+                        margin-right: 1rem;
+                        font-style: normal;
+                        color: #ccc;
+                    }
+            }
+                 .start_list{
+                .box(vertical);
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                dl{
+                    .box(horizontal);
+                      margin: 1rem;
+                    -webkit-box-flex: 1;                  
+                    dt{
+                        img{
+                            .full(4rem,auto,none);
+                        }
+                    }
+                    dd{
+                        margin-left:0.8rem;
+                        h5{
+                            font-size: 1.5rem;
+                        }
+                        h6{
+                            color: #c9c9c9;
+                            font-size: 1.2rem;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .band{
+                    margin-left: 1rem;
+                    span{
+                        border: 1px solid #ccc;
+                        padding:0.1rem  0.2rem;
+                        border-radius: 0.4rem;
+                        margin-left: 0.2rem;
+                    }
+                }
+                p{
+                    color: #ccc;
+                    margin: 1rem;
+                }
+                i{
+                    font-style: normal;
+                    border: 1px solid red;
+                    border-radius: 0.4rem;
+                    padding: 0.2rem 0.4rem;
+                    color: red;
+                    position: absolute;
+                    top: 2.5rem;
+                    right: 1rem;
+                }
+            }
+    }
+}

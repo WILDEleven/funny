@@ -1,0 +1,148 @@
+@import url("m_style.css");
+body,
+html,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 5rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc ;
+}
+.wrap header .left {
+  line-height: 3.5rem;
+  -webkit-flex: 1;
+}
+.wrap header .left .input_search {
+  width: 18rem;
+  height: auto;
+  background: #eeeeee;
+  border-radius: 0.4rem;
+  line-height: 3.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin: 1rem;
+}
+.wrap header .left .input_search span {
+  margin: 0 0.6rem;
+}
+.wrap header .left .input_search span img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+}
+.wrap header .left .input_search input {
+  display: block;
+  background: #eee;
+  border: none;
+  outline: none;
+  line-height: 3.5rem;
+}
+.wrap header .right {
+  width: 3rem;
+  height: auto;
+  background: none;
+  line-height: 5rem;
+  position: absolute;
+  right: 1rem;
+}
+.wrap header .right a {
+  color: red;
+  font-size: 1.5rem;
+}
+.wrap section .content {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc;
+}
+.wrap section .content dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin: 1rem;
+  -webkit-box-flex: 1;
+}
+.wrap section .content dl dt img {
+  width: 4rem;
+  height: auto;
+  background: none;
+}
+.wrap section .content dl dd {
+  margin-left: 0.8rem;
+}
+.wrap section .content dl dd h5 {
+  font-size: 1.5rem;
+}
+.wrap section .content dl dd h6 {
+  color: #c9c9c9;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.wrap section .content i {
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  line-height: 5.5rem;
+  margin-right: 1rem;
+  font-style: normal;
+  color: #ccc;
+}
+.wrap section .start_list {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.wrap section .start_list dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin: 1rem;
+  -webkit-box-flex: 1;
+}
+.wrap section .start_list dl dt img {
+  width: 4rem;
+  height: auto;
+  background: none;
+}
+.wrap section .start_list dl dd {
+  margin-left: 0.8rem;
+}
+.wrap section .start_list dl dd h5 {
+  font-size: 1.5rem;
+}
+.wrap section .start_list dl dd h6 {
+  color: #c9c9c9;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.wrap section .start_list .band {
+  margin-left: 1rem;
+}
+.wrap section .start_list .band span {
+  border: 1px solid #ccc;
+  padding: 0.1rem  0.2rem;
+  border-radius: 0.4rem;
+  margin-left: 0.2rem;
+}
+.wrap section .start_list p {
+  color: #ccc;
+  margin: 1rem;
+}
+.wrap section .start_list i {
+  font-style: normal;
+  border: 1px solid red;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  color: red;
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+}

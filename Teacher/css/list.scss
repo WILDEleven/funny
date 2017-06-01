@@ -1,0 +1,29 @@
+@import url(m_style.css);
+@mixin full($w,$h,$b){
+    width: $w;
+    height: $h;
+    background: $b;
+}
+@mixin box($r){
+    display: flex;
+    flex-direction: $r;
+}
+body,html,.wrap{
+    @include full(100%,100%,none);
+}
+.wrap{
+  @include box(column);
+    header{
+        @include full(100%,5.5rem,pink);
+        @include box(row);
+        .left{
+            flex: 1;
+            .input_search{
+                @include full(30rem,auto,#ccc);
+            }
+        }
+        .right{
+            
+        }
+    }  
+}
